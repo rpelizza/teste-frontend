@@ -18,6 +18,7 @@ gulp.task('sass', () => {
 // gulp.task('html_base', () => {
 // 	return gulp.src('dev/html_base/base.html').pipe(rename('base.html')).pipe(gulp.dest('public/angular')).pipe(gulp.dest('public/vuejs'));	
 // });
+// //
 
 // Task para o html ng
 gulp.task('html_ng', () => {	
