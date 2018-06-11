@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Teste Theòs Sistemas</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+	<!-- Modal -->
+	<div class="modal-theos" id="modal_cadastro">
+		<div class="modal-background">
+			<div class="modall">
+				<h2>Novo Cadastro</h2>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="nome">Nome</label>
+							<input type="text" class="form-control" id="nome" placeholder="Nome" autocomplete="off" required>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="sobrenome">Sobrenome</label>
+							<input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" autocomplete="off" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Email" autocomplete="off" required>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="sexo">Sexo</label>
+							<select name="sexo" id="sexo" class="form-control">
+								<option value="0" selected disabled>Selecione</option>
+								<option value="Masculino">Masculino</option>
+								<option value="Feminino">Feminino</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="estado">Estado</label>
+							<select name="estado" id="estado" class="form-control">
+								<option value="0" selected disabled>Selecione</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="cidade">Cidade</label>
+							<select name="cidade" id="cidade" class="form-control">
+								<option value="0" selected disabled>Selecione</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="area_formacao">Área de formação</label>
+							<input type="text" class="form-control" id="area_formacao" placeholder="Área de formação" autocomplete="off" required>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-6">
+						<div class="form-group">
+							<label for="profissao">Profissão</label>
+							<select name="profissao" id="profissao" class="form-control" required>
+								<option value="0" selected disabled>Selecione</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-12 col-lg-12">
+						<div class="box-flex flexrow flexcenter flexend">							
+							<button class="btn btn-default">Cancelar</button>
+							<button class="btn btn-primary">Salvar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- final do modal -->
+
+	<header class="sombra">
+		<div class="title text-center">
+			<h1>Teste front-end</h1>
+		</div>
+	</header>
+
+	<main>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<div class="options-crud box-flex flexrow flexend">
+					<a href="#modal_cadastro" type="button" class="btn btn-primary btn-sm modal-trigger">Novo cadastro</a>
+				</div>
+				
+				<h4 class="nodata text-center">Nenhum registro encontrado.</h4>
+			</div>			
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<input type="search" placeholder="Pesquisar">
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="table-responsive">
+					<table class="table table-striped table-bordered table-hover table-condensed table-data">
+						<thead>
+							<tr>
+								<th>Nome</th>
+								<th>E-mail</th>
+								<th>Sexo</th>
+								<th>Cidade / Estado</th>
+								<th>Área de formação</th>
+								<th>Profissão</th>
+								<th>Opções</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>João da silva</td>
+								<td>joao@joao.com.br</td>
+								<td>Masculino</td>
+								<td>Londrina - Pr</td>
+								<td>Medicina</td>
+								<td>Médico</td>
+								<td>
+									<div class="options-table">
+										<button class="btn btn-warning btn-xs">
+											Editar
+										</button>
+										<button class="btn btn-danger btn-xs">
+											Excluir
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td>João da silva</td>
+								<td>joao@joao.com.br</td>
+								<td>Masculino</td>
+								<td>Londrina - Pr</td>
+								<td>Medicina</td>
+								<td>Médico</td>
+								<td>
+									<div class="options-table">
+										<button class="btn btn-warning btn-xs">
+											Editar
+										</button>
+										<button class="btn btn-danger btn-xs">
+											Excluir
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		Teste frontend Theòs Sistemas 2018
+	</footer>	
+
+</body>
+</html>
